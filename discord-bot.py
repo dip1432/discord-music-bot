@@ -96,19 +96,3 @@ async def play(ctx, *, command = None):
         voice.play(discord.FFmpegPCMAudio(f'music/{sourse}'))
 
 client.run(settings['token'])
-
-
-# async def help(ctx):
-#     emb = discord.Embed(title='Список команд')
-
-# @client.event
-# async def on_member_join(member):
-#     channel = client.get_channel(865733476209000449)
-#     await channel.send(f'{member.mention} добро пожаловать на сервер!')
-#
-# @client.event
-# async def on_message(message):
-#     if message.author == client.user:
-#         return
-#     if message.content.startswith('d.help'):
-#         await message.channel.send('help!')
